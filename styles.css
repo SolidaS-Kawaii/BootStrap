@@ -1,0 +1,273 @@
+:root {
+    --color-light: #e7e4de; /* Light Beige */
+    --color-light-blue: #c3e1e5; /* Light Blue */
+    --color-muted-blue: #aad0d4; /* Muted Blue */
+    --color-medium-blue: #68b8c1; /* Medium Blue */
+    --color-deep-blue: #2a8a92; /* Deep Blue */
+    --color-orange: #f77532; /* Accent Orange */
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* General Body Styling */
+body {
+    padding-top: 10px;
+    background-color: var(--color-white); /* Light Beige background */
+    color: var(--color-black); /* Keep text black */
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--color-medium-blue) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-white) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--color-white);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    height: 100vh;
+}
+
+.home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--color-black);
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-deep-blue); /* Deep Blue background for the image */
+}
+
+.home-right img {
+    max-width: auto;
+    height: 100%;
+}
+
+.home-left h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--color-medium-blue); /* Medium Blue text */
+}
+
+.home-left p {
+    font-size: 1.5rem;
+    color: var(--color-muted-blue); /* Muted Blue text */
+}
+
+#star-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Behind the text */
+  }
+  
+  #sky {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  #shootingstars {
+    margin: 0;
+    padding: 0;
+    width: 150vh;
+    height: 100vw;
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%)) rotate(120deg);
+  }
+  
+  .wish {
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px white);
+    overflow: hidden;
+    opacity: 0;
+  }  
+
+section {
+    padding-top:30px; /* Height of the navbar */
+    margin-top: 16px; /* Negative margin to offset the padding */
+}
+
+h1, h2 {
+    color: #f77532;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    width: 60%;
+}
+
+.profile-pic {
+    border: 5px solid #007bff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Education Section */
+#education {
+    padding: 0rem;
+  }
+  
+  .education-card {
+    display: flex;
+    align-items: center;
+    border: none; /* Remove border if you don’t want it */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+/* Education Section */
+#education {
+    padding: 0rem;
+  }
+
+.education-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--color-muted-blue); /* Muted Blue border */
+}
+
+.education-card img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+  
+/*Skill Section*/
+#skills h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    font-size: 1.3rem;
+}
+
+#skills .list-group {
+    margin-bottom: 2rem;
+}
+
+#skills .list-group-item {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+#skills .list-group-item:hover {
+    background-color: #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+/*Project Section*/
+.project-card {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-medium-blue); /* Medium Blue border */
+}
+
+.project-card .card-body {
+    flex: 0 1 auto;
+}
+
+.project-card .carousel {
+    flex: 1 0 auto;
+    min-height: 200px; /* Adjust this value as needed */
+    max-height: 300px; /* Adjust this value as needed */
+}
+
+.project-card .carousel-item {
+    height: 100%;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card .btn {
+    background-color: var(--color-orange); /* Accent Orange for buttons */
+    color: var(--color-white);
+}
+
+.project-card .btn:hover {
+    background-color: var(--color-deep-blue); /* Deep Blue hover effect */
+    color: var(--color-white);
+}
+
+#contact .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+#contact .list-unstyled i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+#contactForm {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.social-links .btn {
+    margin-bottom: 0.5rem;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.btn-outline-gitlab {
+    color: #fc6d26;
+    border-color: #fc6d26;
+}
+
+.btn-outline-gitlab:hover {
+    color: #fff;
+    background-color: #fc6d26;
+    border-color: #fc6d26;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-medium-blue);
+    color: var(--color-deep-blue);
+}
